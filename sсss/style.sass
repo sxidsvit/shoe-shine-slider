@@ -1,0 +1,159 @@
+$acsent-color: #6146EE
+$swiper-theme-color: $acsent-color
+$swiper-navigation-color: $acsent-color
+
+body 
+  background: #fff
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+  font-size: 14px
+  color: #000
+  margin: 0
+  padding: 0px 50px 50px
+
+.swiper-container 
+  width: 100%
+  padding-top: 50px
+  padding-bottom: 50px
+  margin-top: 50px
+
+.swiper-slide 
+  background-position: center
+  background-size: cover
+  background-size: contain
+  background-repeat: no-repeat
+  width: 375рx
+  height: auto
+
+.cleaner--container 
+  position: relative
+  width: -webkit-max-content
+  width: -moz-max-content
+  width: max-content
+  margin: 0 auto
+
+.cleaner-img--dirty 
+  position: absolute
+  top: 0
+  left: 0
+  overflow: hidden
+  max-width: 100%
+  height: auto
+
+.cleaner-img--dirty img,
+.cleaner-img--clean img 
+  min-width: 351px
+  max-width: 351px
+  height: auto
+  display: block
+  background-color: transparent
+  object-fit: cover
+
+/* Стили для контролов Prev - next */
+.swiper-buttons 
+  display: none
+  position: absolute
+  width: 62px
+  height: 62px
+  border-radius: 50%
+  background: #FFFFFF
+  border: 1px solid $acsent-color
+  box-sizing: border-box
+  left: calc(50% - 31px)
+  top: calc(50% - 31px)
+  z-index: 10
+
+.swiper-button-next,
+.swiper-button-prev 
+  left: 2px
+  right: auto
+  color: $acsent-color
+
+.swiper-button-next 
+  right: 2px
+  left: auto
+
+.swiper-button-prev:after,
+.swiper-button-next:after 
+  font-size: 16px
+  font-weight: 400
+
+.swiper-container 
+  border: 2px solid $acsent-color
+  padding-bottom: 20px
+
+.swiper-title 
+  font-family: Montserrat
+  font-style: normal
+  font-weight: 500
+  font-size: 36px
+  padding: 0 0 20px 80px
+  line-height: 100%
+  display: inline-block
+  border-bottom: 6px solid $acsent-color
+
+/* swiper-buttons */
+.swipper-button 
+  display: block
+  width: 196px
+  margin-top: 50px
+  margin-bottom: 50px
+  margin-left: auto
+  margin-right: auto
+  background-color: $acsent-color
+  color: #fff
+  text-transform: uppercase
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(7, 255, 255, 0.12), 0px 10px 20px rgba(97, 70, 238, 0.22)
+  border-radius: 8px
+  text-align: center
+  font-family: Montserrat
+  font-style: normal
+  /* font-weight: bold */
+  font-size: 13px
+  line-height: 13px
+  padding: 17px 20px
+
+/* swiper-pagination */
+
+.swiper-pagination-wrapper 
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-top: 25px
+
+.pagination-button-prev,
+.pagination-button-next 
+  width: 42px
+  height: auto
+  display: flex
+  margin: 0 10px
+
+.swiper-pagination
+  &-bullet 
+    width: 16px
+    height: 16px
+    margin: 5px
+    display: inline-block
+    border-radius: 100%
+    background: #000
+    opacity: 0.2
+    &-active
+      background-color: $acsent-color
+      opacity: 1
+
+  //  circle with arrows
+
+.circle-with-arrows
+  display: none
+  width: 62px
+  height: 62px
+
+  
+//  media queries
+
+@media only screen and (max-width:640px) 
+    
+  .swiper-pagination-bullet 
+    width: 75px
+    height: 9px
+    margin: 5px 
+    border-radius: 3px
